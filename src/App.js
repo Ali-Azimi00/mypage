@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import ParticlesBg from 'particles-bg'
 // import Zoom from 'react-reveal/Zoom'
 import About from './Components/About'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
@@ -12,18 +12,7 @@ import Container from 'react-bootstrap/Container';
 
 function App() {
 
-  let helloMessage =()=>{
-      console.log("hi")
-  }
-
-  // let config = {
-  //   color="#080707";
-  //   num={150};
-  //   type="lines";
-  //   bg={true};
-  //   position="absolute";
-  // }
-
+  
 
 
   return (
