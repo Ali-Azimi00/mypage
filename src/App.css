@@ -1,8 +1,8 @@
-.App {
-  text-align: center;
-}
+/* .App {
+  /* text-align: center; */
+/* } */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -26,13 +26,76 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */ 
+
+.TitleBlock{
+  min-height:600px;  
+  padding-bottom: 0px;
+}
+
+.WelcomeLine1{
+  color: rgb(232, 224, 224);
+  padding-top: 12%;
+  padding-left: 20%;
+  font-size: 50px;
+  font-variant: "outlined";
+  text-align: left;
+}
+
+.WelcomeLine2{
+  color: rgb(232, 224, 224);
+  padding-top: 0px;
+  padding-left: 20%;
+  font-size: 50px;
+  text-align: left;
+}
+
+.WelcomeHighlight{
+  color: rgb(13, 97, 80);
+}
+
+.AboutCard{
+  background-color: rgb(13, 97, 80);
+  background-size: cover;
+  /* display:block;
+  position:sticky; */
+  margin-top: 0%;
+  opacity: 100%;
+  height: 8000px;
+}
+
+.AboutText{
+  color:rgb(232, 224, 224);
+  font-size: 50px;
+  padding: 10%;
+}
+
+.ButtonPosition{
+  padding-bottom: 60%;
+  margin-left: 20%;
+}
+
+.GreenButton{
+  padding: .70%;
+
+  font-size: 20px;  
+  color: white;
+  cursor: pointer;
+  
+  background-clip: text;
+  
+  border-width: 3px;
+  border-top-right-radius: 10px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, rgb(232, 224, 224) 0%, rgb(13, 97, 80) 100%);
+  border-image-slice: 1; 
 }
