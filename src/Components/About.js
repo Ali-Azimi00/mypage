@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './About.css';
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 
 function About(){
 

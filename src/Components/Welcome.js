@@ -3,7 +3,7 @@ import '../App.css';
 import ParticlesBg from 'particles-bg'
 // import Zoom from 'react-reveal/Zoom'
 import { Link } from "react-scroll";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { animated , useSpring } from '@react-spring/web';
 
 
