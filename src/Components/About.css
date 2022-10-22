@@ -2,3 +2,32 @@
     background-color: white;
     color: black;
 }
+
+.leftPicture{
+    width: 33%;
+}
+
+.textBox{
+    padding: 10%;
+    position: absolute; 
+    top:10%;
+    right:10%;
+    /* font-size: 3vh;   */
+
+    width: 25vh;
+    height: 75vh;
+   
+    border-width: 2vh;
+    border-radius: 25px;
+    border-color:  rgb(13, 97, 80) ;
+    border-style: solid;
+    opacity: 50%;
+    background-image: linear-gradient(180deg, rgb(13, 97, 80) 5%, rgb(232, 224, 224) 50%);
+}
+
+.imgBox{
+    padding: 0%;
+    position: absolute;
+    top: 10%; 
+    left: 10%;
+}

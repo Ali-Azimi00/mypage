@@ -8,21 +8,19 @@ function About(){
 
 
 return (
-    <Container name="about" className='AboutCard AboutText'>
-        <Row>
-            <Col>
-            <div className="BioText">
-                hi
-            </div>
-            {/* <img src="\Images\smlAli.PNG" alt="portrait"/> */}
-            </Col>
-            <Col>
-                Hell
-            </Col>
-        </Row>
-    
+    <div name="about" className=''>
+     
+       {/* <img src="..." class=" imgBox rounded mx-auto d-block" alt="..."/>
 
-    </Container>
+        <div>
+            <p className="textBox">hello</p>
+        </div>
+ */}
+
+
+
+
+    </div>
 
 );
 }
