@@ -36,7 +36,7 @@ function Welcome(){
     })
   
     const props3 = useSpring({ 
-      to: { opacity: 1 }, 
+      to: { opacity: 100 }, 
       from: { opacity: 0 },
       reset: false,
       reverse: flip.p3,

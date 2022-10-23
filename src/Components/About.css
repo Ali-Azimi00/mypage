@@ -21,7 +21,6 @@
     border-radius: 25px;
     border-color:  rgb(13, 97, 80) ;
     border-style: solid;
-    opacity: 50%;
     background-image: linear-gradient(180deg, rgb(13, 97, 80) 5%, rgb(232, 224, 224) 50%);
 }
 
