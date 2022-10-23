@@ -5,6 +5,7 @@ import ParticlesBg from 'particles-bg'
 import { Link } from "react-scroll";
 import { Row, Col } from "react-bootstrap";
 import { animated , useSpring } from '@react-spring/web';
+import { Container } from "react-bootstrap";
 
 
 function Welcome(){
@@ -48,6 +49,10 @@ function Welcome(){
 return (
     
     <React.Fragment>
+
+<Container className= "container"> 
+
+
       <div className="zIndex">
       <div className="particles">
          <ParticlesBg  
@@ -82,7 +87,7 @@ return (
 
     </Col>
       </div>
-        
+   </Container>
     
     </React.Fragment>
 );

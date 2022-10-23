@@ -10,12 +10,12 @@ function About(){
 return (
     <div name="about" className=''>
      
-       {/* <img src="..." class=" imgBox rounded mx-auto d-block" alt="..."/>
+       {/* <img src="..." class=" imgBox rounded mx-auto d-block" alt="..."/>*/
 
         <div>
-            <p className="textBox">hello</p>
+            <p className="">hello</p>
         </div>
- */}
+ }
 
 
 
