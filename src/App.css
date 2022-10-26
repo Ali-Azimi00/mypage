@@ -60,7 +60,7 @@
   padding-bottom: 0px;
   /* margin: auto; */
   flex-direction: column;
-  
+   
   
 }
 
@@ -95,21 +95,10 @@
   background-size:100vw;
 
   margin-top: 29vh;
+  height: 106vh;
  
   position:absolute; top: 65vh; left: 0vh;right: 0vh;
-  /* width: 500px; */
-  /* width: 79.1vw; */
 
-  
-
-  /* display:flex; */
-  /* width: 80%;  10*/
-}
-
-.AboutText{
-  color:rgb(232, 224, 224);
-  font-size: 50vx;
-  padding: 10%;
 }
 
 .ButtonPosition{
@@ -119,18 +108,25 @@
 
 .GreenButton{
   padding: .70%;
-
   font-size: 3vh;  
   color: white;
   cursor: pointer;
-  
   background-clip: text;
-  
+  background-color: transparent;
   border-width: .5vh;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   border-style: solid;
   border-image: linear-gradient(135deg, rgb(232, 224, 224) 0%, rgb(13, 97, 80) 100%);
   border-image-slice: 1; 
+  
+}
+
+.GreenButton:hover{
+  background: rgb(255, 255, 255);
+  border-style: none;
+  border-color:  rgb(255, 255, 255);;
+  color: rgb(13, 97, 80);
+  font-weight: 500;
 }
 
 .main {

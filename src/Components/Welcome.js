@@ -8,9 +8,10 @@ import { animated , useSpring } from '@react-spring/web';
 import { Container } from "react-bootstrap";
 
 
-function Welcome(){
+function Welcome({setKnowMore}){
     const [flip, setFlip] = useState({p1:false, p2:false, p3:false})
 
+   
     const props = useSpring({ 
       to: { y: 0}, 
       from: { y: -1000 } ,
@@ -45,14 +46,11 @@ function Welcome(){
      // onRest: () => setFlip(!(flip.p3)),
     })
 
-
 return (
     
     <React.Fragment>
 
-<Container className= "container"> 
-
-
+    <Container className= "container"> 
       <div className="zIndex">
       <div className="particles">
          <ParticlesBg  
@@ -78,13 +76,22 @@ return (
       
         <animated.div style={props3}>
           <span className="about GreenButton ButtonPosition"  >
-            <Link className="" to="about" smooth={true} duration={1000}> Know More</Link>
+            <Link className="" 
+                  to="about" 
+                  smooth={true} 
+                  duration={3500}
+                  isDynamic={true}
+                  offset={385}
+                  delay={0}
+                  onClick={()=>{
+                    setKnowMore(true)
+                  }}
+            > Know More</Link>
           </span>
         </animated.div>  
 
           </div>      
       </Row>
-
     </Col>
       </div>
    </Container>

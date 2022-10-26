@@ -4,29 +4,54 @@
 }
 
 .leftPicture{
+    position: absolute;
+    margin-top: 15vh;
+    left: 14vw;
     width: 33%;
+
+    border-top-left-radius: 12.5vh;
+    border-bottom-right-radius: 12.5vh;
+    border-style: double;
+    border-color: white;
+    border-width: 1.5vh;
 }
 
-.textBox{
-    padding: 10%;
-    position: absolute; 
-    top:10%;
-    right:10%;
-    /* font-size: 3vh;   */
+.AboutText{
+    color:rgb(232, 224, 224);
+    position: absolute;
+    margin-top: 14vh;
+    right:12vw;
+    width: 33%;
 
+    font-size: 2.25vw;
+    line-height: 7vh;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.AboutButton{
+    position:absolute; top:80vh; right: 38vw;
+    display: block;
+    color: white;
+    cursor: pointer;
+
+
+       
+}
+.textBox{
+    padding-top: 0%;
+    /* position: absolute;  */
+    /* top:10%;
+    right:10%; */
+    /* font-size: 3vh;   */
+/* 
     width: 25vh;
-    height: 75vh;
+    height: 75vh; */
    
-    border-width: 2vh;
+    /* border-width: 2vh;
     border-radius: 25px;
     border-color:  rgb(13, 97, 80) ;
     border-style: solid;
-    background-image: linear-gradient(180deg, rgb(13, 97, 80) 5%, rgb(232, 224, 224) 50%);
+    background-image: linear-gradient(180deg, rgb(13, 97, 80) 5%, rgb(232, 224, 224) 50%); */
 }
 
-.imgBox{
-    padding: 0%;
-    position: absolute;
-    top: 10%; 
-    left: 10%;
-}
