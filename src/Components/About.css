@@ -8,7 +8,7 @@
     margin-top: 15vh;
     left: 14vw;
     width: 33%;
-
+    
     border-top-left-radius: 12.5vh;
     border-bottom-right-radius: 12.5vh;
     border-style: double;
@@ -20,24 +20,46 @@
     color:rgb(232, 224, 224);
     position: absolute;
     margin-top: 14vh;
-    right:12vw;
+    /* right:12vw; */
     width: 33%;
-
+    margin-left: 50%;
     font-size: 2.25vw;
-    line-height: 7vh;
-    justify-content: center;
+    line-height:auto;
+    /* justify-content: center; */
     flex-direction: row;
+    
+    /* text-align-last: justify; */
 }
 
-.AboutButton{
-    position:absolute; top:80vh; right: 38vw;
-    display: block;
+.AboutBtnPosition{
+    position: absolute;
+    top:0vh;
+    /* margin-top: 45vw; */
+    margin-top: 40%;
+    margin-left: 50%;
+    /* left: 14vw; */
+    width: 15%;
+    height: 5vw;
+  }
+
+  .AboutBtn{
+    /* padding: .70%;*/
+    padding-bottom:.1%; 
+
+    font-size: 2vh;  
     color: white;
     cursor: pointer;
+    background-clip: text;
+    background-color: transparent;
+
+    border-width:.9vh;
+    border-style: double;
+    border-color:white;
+    border-top-right-radius:4vh;
+    border-bottom-left-radius:4vh;
+  }
 
 
-       
-}
 .textBox{
     padding-top: 0%;
     /* position: absolute;  */

@@ -60,8 +60,6 @@
   padding-bottom: 0px;
   /* margin: auto; */
   flex-direction: column;
-   
-  
 }
 
 .WelcomeLine1{
@@ -95,10 +93,10 @@
   background-size:100vw;
 
   margin-top: 29vh;
-  height: 106vh;
- 
+  height: 100vh;
+  /* height: 100%; */
   position:absolute; top: 65vh; left: 0vh;right: 0vh;
-
+  padding: 5%;
 }
 
 .ButtonPosition{
