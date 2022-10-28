@@ -6,12 +6,15 @@ import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import ResumePdf from "../Pdf/AliAzimi-Software_Engineer.pdf"
 // import NavBar from './NavBar'
 
-function About({setEvenMore}){
+function About(
+    // {setEvenMore}
+    )
+    {
  
     let [currentWidth,setCurrentWidth] = useState(window.innerWidth)
     let [btnLocation,setBtnLocation]= useState({marginTop:"40%", fontSize:"2vh"})
    
-    let [opId, setOpId]= useState("")
+    let [opId]= useState("")
 
     let  paragraph1 = "I'm a driven full-stack software engineer who enjoys making dynamic and interactive front-end designs. Along with extensive experience in React, I have professional experience using .NET/C# and SQL frameworks"
 
@@ -71,15 +74,15 @@ function About({setEvenMore}){
       
     },[window.innerWidth])
 
-    let setWelcome = ()=>{
-        setEvenMore(true)
+    // let setWelcome = ()=>{
+    //     setEvenMore(true)
 
-        setOpId ((prevState)=>{
-            let pd = {...prevState}
-            pd = "elementFade"
-            return pd
-        })
-    }
+    //     setOpId ((prevState)=>{
+    //         let pd = {...prevState}
+    //         pd = "elementFade"
+    //         return pd
+    //     })
+    // }
 
     const onResumeClick = () => {
         window.open(ResumePdf);

@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import About from './Components/About';
 import Welcome from './Components/Welcome';
 import Last from './Components/LastSect';
-import Footer from './Components/NavBar'
+// import Footer from './Components/NavBar'
 
 
 
