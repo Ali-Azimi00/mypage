@@ -3,6 +3,34 @@
     color: black;
 }
 
+.elementFade{
+    opacity: 100%;
+    animation: myfade 2s ;
+    animation-fill-mode:forwards;
+}
+@keyframes myfade {
+        from {opacity: 100%;}
+        to {opacity:0%}   
+        /* from {opacity:0%}
+        to {opacity:100%} */
+        /* from {background:rgb(232, 224, 224); opacity:0%}
+        to {background:rgb(97, 41, 13);opacity: 100%}  */
+}
+
+.elementFadeIn{
+    opacity: 100%;
+    animation: myfadeIn 2s ;
+    animation-fill-mode:forwards;
+}
+@keyframes myfadeIn {
+    from {opacity: 100%;}
+    to {opacity:0%}   
+    /* from {opacity:0%}
+    to {opacity:100%} */
+    from {background:rgb(232, 224, 224)}
+    to {background:rgb(97, 41, 13);} 
+}
+
 .leftPicture{
     position: absolute;
     margin-top: 15vh;
@@ -27,7 +55,6 @@
     line-height:auto;
     /* justify-content: center; */
     flex-direction: row;
-    
     /* text-align-last: justify; */
 }
 
@@ -43,14 +70,17 @@
   }
 
   .AboutBtn{
-    /* padding: .70%;*/
-    padding-bottom:.1%; 
+    padding: 1vh;
+    contain:content;
 
-    font-size: 2vh;  
+    font-size: 2vw;  
     color: white;
     cursor: pointer;
     background-clip: text;
     background-color: transparent;
+
+    height: 8%;
+    width: 20%;
 
     border-width:.9vh;
     border-style: double;
@@ -59,9 +89,31 @@
     border-bottom-left-radius:4vh;
   }
 
+  #aboutbtn:hover{
+  /* width: 300px; */
+    /* height: 200px; */
+    background: rgb(13, 97, 80);
+    animation: mymove 2s ;
+    animation-fill-mode:forwards;
+  }
+  @keyframes mymove {
+        from {background-color: rgb(13, 97, 80);}
+        to {background-color: rgb(254, 254, 255); 
+            border-color:black;
+            font-color:black;
+        }
+    }
+
+  .AboutBtn:hover{
+    color: black;
+    font-weight: 10vh;
+    border-width: 1.3vh;
+    /* border-color: black; */
+    /* background: white; */
+  }
 
 .textBox{
-    padding-top: 0%;
+    padding-top: 3%;
     /* position: absolute;  */
     /* top:10%;
     right:10%; */

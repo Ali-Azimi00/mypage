@@ -11,7 +11,6 @@ import { Container } from "react-bootstrap";
 function Welcome({setKnowMore}){
     const [flip, setFlip] = useState({p1:false, p2:false, p3:false})
 
-   
     const props = useSpring({ 
       to: { y: 0}, 
       from: { y: -1000 } ,
@@ -60,33 +59,32 @@ return (
         color="#080707"
         position="absolute" 
       />
-      </div>
-      
+      </div>      
     <Col> 
       <Row>
         <div className="TitleBlock">
 
         <animated.div style={props}>
-          <h1 className="WelcomeLine1">Hello! My Name is {" "} <span className='WelcomeHighlight'> Ali Azimi</span></h1>
+          <h1 className="WelcomeLine1">Hello! My Name is {" "} <span className='WelcomeHighlight'> Ali_Azimi</span></h1>
         </animated.div>
     
         <animated.div style={props2}>
-          <h1 className='WelcomeLine2'> I am a <span className='WelcomeHighlight'>Full Stack</span> Software Engineer</h1> 
+          <h1 className='WelcomeLine2'> I am a <span className='WelcomeHighlight'>Full_Stack</span> Software Engineer</h1> 
         </animated.div>
       
         <animated.div style={props3}>
-          <span className="about GreenButton ButtonPosition"  >
+          <span id="knowMore" className="about GreenButton ButtonPosition"  >
             <Link className="" 
                   to="about" 
                   smooth={true} 
                   duration={3500}
                   isDynamic={true}
-                  offset={385}
+                  offset={685}
                   delay={0}
                   onClick={()=>{
                     setKnowMore(true)
                   }}
-            > Know More</Link>
+            > Know_More</Link>
           </span>
         </animated.div>  
 
