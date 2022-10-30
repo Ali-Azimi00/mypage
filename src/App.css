@@ -81,8 +81,19 @@
   padding-left: 10%;
   padding-bottom:2%;
   font-size: 8vh;
-  text-align: left;
+  text-align: left;  
+
+  opacity: 0%;
+
   
+  animation: welcomeFadeIn 3.5s ;
+  animation-delay: 2.5s ;
+  animation-fill-mode:forwards;
+}
+@keyframes welcomeFadeIn {
+  from {opacity:0%}
+  to {opacity: 100%}
+
 }
 
 .WelcomeHighlight{
@@ -94,11 +105,19 @@
   background-color: rgb(13, 97, 80);
   background-size:100vw;
 
-  margin-top: 29vh;
-  /* height: 100vh; */
-  height: 100%; 
-  position:absolute; top: 65vh; left: 0vh;right: 0vh;
-  padding: 5%;
+  /* margin-top: 29vh; */
+  margin-top: 0%;
+  /* height: 50vh; */
+  /* height: 90%;  */
+  position:absolute; 
+  /* top: 65vh;  */
+  top: 100vh;
+  left: 0vh;
+  right: 0vh;
+  padding: 15%;
+  padding-top: 10%;
+
+  overflow: hidden;
 }
 
 .ButtonPosition{
@@ -106,18 +125,7 @@
   margin-left: 10%;
 }
 
-#knowMore:hover{
-  
-  animation: mymove 1.5s ;
-  /* animation-fill-mode:forwards; */
-}
- @keyframes mymove {
-  from {background-color: red;}
-  to {background-color: rgb(0, 0, 203); 
-    border-color:black;
-    font-color:black;
-  }
-} 
+
 .GreenButton{
   padding: .70%;
   font-size: 3vh;  

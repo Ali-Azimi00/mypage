@@ -7,34 +7,31 @@ import { Row, Col } from "react-bootstrap";
 import { animated , useSpring } from '@react-spring/web';
 import { Container } from "react-bootstrap";
 
+import About from "./About";
 
-function Welcome({setKnowMore}){
+
+function Welcome(){
     const [flip, setFlip] = useState({p1:false, p2:false, p3:false})
-
+    const [aboutCard, setAboutCard] = useState()
+  
     const props = useSpring({ 
       to: { y: 0}, 
       from: { y: -1000 } ,
-      // to: { opacity: 1 }, 
-      // from: { opacity: 0 } ,
       reset: false,
       reverse: flip.p1,
       delay: 0,
       config:{duration:2000, friction:50},
       onRest: () => setFlip(!(flip.p1)),
-    })
-  
+    }) 
     const props2 = useSpring({ 
       to: { y: 0}, 
-      from: { y: 2000 } ,
-      // to: { opacity: 1 }, 
-      // from: { opacity: 0 } ,
+      from: { y: 270 } ,
       reset: false,
       reverse: flip.p2,
-      delay: 1100,
-      config:{duration:2500,friction:50},
+      delay: 2400,
+      config:{duration:900,friction:50},
       onRest: () => setFlip(!(flip.p2)),
     })
-  
     const props3 = useSpring({ 
       to: { opacity: 1 }, 
       from: { opacity: 0 },
@@ -44,6 +41,14 @@ function Welcome({setKnowMore}){
       config:{duration:2000,tension:10, friction: 0},
      // onRest: () => setFlip(!(flip.p3)),
     })
+
+    let addAbout =()=>{
+      setAboutCard((prevState)=>{
+        let pd = {...prevState}
+        pd = <About/>
+        return pd
+      })
+    }
 
 return (
     
@@ -77,13 +82,15 @@ return (
             <Link className="" 
                   to="about" 
                   smooth={true} 
-                  duration={3500}
+                  duration={3000}//3500
                   isDynamic={true}
-                  offset={685}
+                  offset={555}//355
                   delay={0}
-                  onClick={()=>{
-                    setKnowMore(true)
-                  }}
+                  // onClick={()=>{
+                  //   setKnowMore(true)
+                  // }}
+
+                  onClick ={addAbout}
             > Know_More</Link>
           </span>
         </animated.div>  
@@ -92,6 +99,10 @@ return (
       </Row>
     </Col>
       </div>
+
+    {/* <About></About> */}
+    {aboutCard}
+
    </Container>
     
     </React.Fragment>

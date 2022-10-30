@@ -1,0 +1,60 @@
+.card{
+    background-color: white;
+    background-image: linear-gradient(180deg, rgb(13, 97, 80) 0%, rgb(66, 66, 66) 100%);
+    overflow:hidden;
+
+    position: fixed;
+    top: 15%;
+    margin-left: 10%;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+
+    max-height: 30vw;
+    width: 50%;
+
+    border-radius: 4vw;
+
+    z-index: 2;
+    padding: 5%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-shadow: 0 0px 17px 8px rgb(247, 244, 244,.4); 
+    /* x;y;blur;spread;color */
+
+    animation: cardEffect 2s infinite;
+    animation-duration: 10s;
+
+    /* animation-fill-mode:both; */
+
+}
+@keyframes cardEffect{
+
+}
+
+.textCenter{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    line-height: 5vw;
+}
+
+
+.xMark{
+    text-align: right;
+    color: white;
+    margin-right: 5%;
+    font-size: 2vw;
+
+    position: absolute;
+    right: 1vw;
+    top: 2vw;
+}
+.xMark:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 2.1vw;
+}

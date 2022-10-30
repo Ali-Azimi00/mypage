@@ -5,7 +5,7 @@
 
 .elementFade{
     opacity: 100%;
-    animation: myfade 2s ;
+    animation: myfade 1.5s ;
     animation-fill-mode:forwards;
 }
 @keyframes myfade {
@@ -17,70 +17,191 @@
         to {background:rgb(97, 41, 13);opacity: 100%}  */
 }
 
-.elementFadeIn{
+/* .elementFadeIn{
     opacity: 100%;
-    animation: myfadeIn 2s ;
+    animation: myfadeIn 2.5s ;
     animation-fill-mode:forwards;
 }
 @keyframes myfadeIn {
-    from {opacity: 100%;}
-    to {opacity:0%}   
-    /* from {opacity:0%}
-    to {opacity:100%} */
-    from {background:rgb(232, 224, 224)}
-    to {background:rgb(97, 41, 13);} 
+    from {background:rgb(13, 97, 80);}
+    to {background:rgb(66, 66, 66);} 
+} */
+
+.btnFadeIn{
+    opacity: 0%;
+    animation: btnfadeIn 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes btnfadeIn {
+    from {opacity:0%}
+    to {opacity:100%}
 }
 
-.leftPicture{
+.buttonList{
+    opacity: 0%;
+    border-color:rgb(8, 8, 8);
+    border-width: 1vh;
+    border-top-style: double;
+    border-bottom-style: double;
+
+    /* height: auto;
+    max-height: 33%; */
+
     position: absolute;
-    margin-top: 15vh;
-    left: 14vw;
-    width: 33%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.buttonListPosition{
+    width: 90%;
+    top:30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+
+}
+
+.center{
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+}
+
+.bgFadeIn{
+    opacity: 100%;
+    animation: myfadeIn 2.5s ;
+    animation-fill-mode:forwards;
+}
+@keyframes myfadeIn {
+    from {background:rgb(13, 97, 80);}
+    to {background:rgb(35, 35, 35);} 
+}
+
+.btnOpening{
+    width: 0%;
+    animation: btnOpen 3s;
+    animation-fill-mode: forwards
+}
+@keyframes btnOpen{
+    from {width:0% }
+    to {width: 100%}
+}
+
+.circle{
+    border-width: 1vh;
+    border-radius: 5vh;
+
+    width: 0%;
+    max-height: 8vh;    
+    min-height: 3vh;
+    margin:3%;
+    padding: 0%;
+    /* max-height: 20%; */
+    overflow: hidden;
+
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img{
+    color: white;
+    font-size: 1.2em;
+  
+    width: 150%;
+    height: 25vh;
+    /* background-color:rgb(13, 97, 80); */
+    background-image: linear-gradient(180deg, rgb(66, 66, 66) 60%, rgb(0, 0, 0) 100%);
     
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.img:hover{
+    opacity: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, rgb(13, 97, 80) 60%, rgb(0, 0, 0) 100%);
+    font-size: 1.5em;
+  
+}
+
+.box{
+    margin-top: 2.5%;
+    margin-left: 0%;
+    height: auto;
+    width: 70%;
+
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profPic{
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     border-top-left-radius: 12.5vh;
     border-bottom-right-radius: 12.5vh;
     border-style: double;
     border-color: white;
     border-width: 1.5vh;
+
+    margin-left: 3%;
+
+    width: 40%;
 }
+
 
 .AboutText{
     color:rgb(232, 224, 224);
-    position: absolute;
-    margin-top: 14vh;
-    /* right:12vw; */
+    position:absolute;
+    top: 9.5vw;
+    /* margin-top: 14vh; */
+    /* right:12vw;  */
     width: 33%;
-    margin-left: 50%;
+    margin-left: 37%;
+    
+
     font-size: 2.25vw;
     line-height:auto;
-    /* justify-content: center; */
     flex-direction: row;
-    /* text-align-last: justify; */
+  
 }
 
 .AboutBtnPosition{
     position: absolute;
-    top:0vh;
+    top:36vw;
     /* margin-top: 45vw; */
-    margin-top: 40%;
-    margin-left: 50%;
+    /* margin-top: 40%; */
+    margin-left: 37%;
     /* left: 14vw; */
     width: 15%;
     height: 5vw;
+
+    box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   }
 
   .AboutBtn{
-    padding: 1vh;
+    padding: .3vh;
     contain:content;
 
-    font-size: 2vw;  
+    font-size: 1.5vw;  
     color: white;
     cursor: pointer;
     background-clip: text;
     background-color: transparent;
 
     height: 8%;
-    width: 20%;
+    width: 15%;
 
     border-width:.9vh;
     border-style: double;
@@ -97,7 +218,7 @@
     animation-fill-mode:forwards;
   }
   @keyframes mymove {
-        from {background-color: rgb(13, 97, 80);}
+        from {background-color:transparent;}
         to {background-color: rgb(254, 254, 255); 
             border-color:black;
             font-color:black;
@@ -112,20 +233,4 @@
     /* background: white; */
   }
 
-.textBox{
-    padding-top: 3%;
-    /* position: absolute;  */
-    /* top:10%;
-    right:10%; */
-    /* font-size: 3vh;   */
-/* 
-    width: 25vh;
-    height: 75vh; */
-   
-    /* border-width: 2vh;
-    border-radius: 25px;
-    border-color:  rgb(13, 97, 80) ;
-    border-style: solid;
-    background-image: linear-gradient(180deg, rgb(13, 97, 80) 5%, rgb(232, 224, 224) 50%); */
-}
 
