@@ -4,13 +4,13 @@
 }
 
 .elementFade{
-    opacity: 100%;
+    opacity: 1;
     animation: myfade 1.5s ;
     animation-fill-mode:forwards;
 }
 @keyframes myfade {
-        from {opacity: 100%;}
-        to {opacity:0%}   
+        from {opacity: 1;}
+        to {opacity:0}   
         /* from {opacity:0%}
         to {opacity:100%} */
         /* from {background:rgb(232, 224, 224); opacity:0%}
@@ -28,17 +28,17 @@
 } */
 
 .btnFadeIn{
-    opacity: 0%;
+    opacity: 0;
     animation: btnfadeIn 5s;
     animation-fill-mode: forwards;
 }
 @keyframes btnfadeIn {
-    from {opacity:0%}
-    to {opacity:100%}
+    from {opacity:0}
+    to {opacity:1}
 }
 
 .buttonList{
-    opacity: 0%;
+    opacity: 0;
     border-color:rgb(8, 8, 8);
     border-width: 1vh;
     border-top-style: double;
@@ -125,7 +125,7 @@
     display: flex;
 }
 .img:hover{
-    opacity: 100%;
+    opacity: 1;
     cursor: pointer;
     background-image: linear-gradient(180deg, rgb(13, 97, 80) 60%, rgb(0, 0, 0) 100%);
     font-size: 1.5em;

@@ -83,7 +83,7 @@
   font-size: 8vh;
   text-align: left;  
 
-  opacity: 0%;
+  opacity: 0;
 
   
   animation: welcomeFadeIn 3.5s ;
@@ -91,8 +91,8 @@
   animation-fill-mode:forwards;
 }
 @keyframes welcomeFadeIn {
-  from {opacity:0%}
-  to {opacity: 100%}
+  from {opacity:0}
+  to {opacity: 1}
 
 }
 
