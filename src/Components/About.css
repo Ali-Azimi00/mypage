@@ -72,7 +72,7 @@
 }
 
 .bgFadeIn{
-    opacity: 100%;
+    opacity: 1;
     animation: myfadeIn 2.5s ;
     animation-fill-mode:forwards;
 }
