@@ -1,35 +1,29 @@
 .card{
     background-color: white;
-    background-image: linear-gradient(180deg, rgb(13, 97, 80) 0%, rgb(66, 66, 66) 100%);
+    /* background-image: linear-gradient(160deg, rgb(13, 97, 80) 0%, rgb(66, 66, 66) 100%); */
     overflow:hidden;
 
     position: fixed;
     top: 15%;
     margin-left: 10%;
+    box-shadow: 0 0px 17px 8px rgb(247, 244, 244,.4); 
     
     align-content: center;
     align-items: center;
     justify-content: center;
     
-
+    z-index: 2;
     max-height: 30vw;
     width: 50%;
-
     border-radius: 4vw;
 
-    z-index: 2;
     padding: 5%;
     padding-bottom: 5%;
     padding-left: 0%;
     padding-right: 0%;
-    box-shadow: 0 0px 17px 8px rgb(247, 244, 244,.4); 
-    /* x;y;blur;spread;color */
-
+    
     animation: cardEffect 2s infinite;
     animation-duration: 10s;
-
-    /* animation-fill-mode:both; */
-
 }
 @keyframes cardEffect{
 
@@ -38,10 +32,10 @@
 .textCenter{
     text-align: center;
     font-size: 2vw;
+    font-variant: small-caps;
     color: white;
     line-height: 5vw;
 }
-
 
 .xMark{
     text-align: right;
@@ -52,9 +46,31 @@
     position: absolute;
     right: 1vw;
     top: 2vw;
+
+    
 }
 .xMark:hover{
     cursor: pointer;
     font-weight: bolder;
     font-size: 2.1vw;
+    animation: xSpin infinite
 }
+/* @keyframes xSpin {
+    from { motion-rotation: 0deg;}
+    to { motion-rotation:360deg;}
+} */
+    
+
+
+.gradient {
+    --magic-rainbow-color-1: rgb(56, 56, 56);
+    --magic-rainbow-color-2: rgb(13, 97, 80);
+    --magic-rainbow-color-3: rgb(158, 158, 158);
+    background: linear-gradient(
+      170deg,
+      var(--magic-rainbow-color-1),
+      var(--magic-rainbow-color-2),
+      var(--magic-rainbow-color-3)
+    );
+    /* 🤯 */
+     }

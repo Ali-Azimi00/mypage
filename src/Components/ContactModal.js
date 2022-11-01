@@ -17,20 +17,20 @@ function ContactModal (props){
 
     return(
         <React.Fragment>
-            <div className="card">  
+            <div className="card gradient">  
                 <div className="xMark"
                     onClick={changeState}> 
                     <>X</>
                 </div>
                 <div className = "textCenter">
                     <div>
-                        <strong>Name: </strong><>Ali Azimi</>
+                        <strong>Name: </strong><>Ali_Azimi</>
                     </div>
                     <div>
                         <strong>Email: </strong><>alidotazimi@gmail.com</>
                     </div>
                     <div>
-                        <strong>Phone: </strong><>213-536-7947</>
+                        <strong>Phone: </strong><>213_536_7947</>
                     </div>    
                 </div>             
             </div>
