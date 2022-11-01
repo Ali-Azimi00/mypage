@@ -17,7 +17,7 @@ function About(){
     let  paragraph1 = "I'm a driven full-stack software engineer who enjoys making dynamic and interactive front-end designs. Along with extensive experience in React, I have professional experience using .NET/C# and SQL frameworks"
 
     const [text] = useTypewriter({
-        words: [" ", "", "About_Me",paragraph1],
+        words: [" ","About_Me",paragraph1],
         cursor:true,
         cursorType: "I",
         typeSpeed:50,

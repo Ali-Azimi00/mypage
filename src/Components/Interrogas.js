@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css';
 import './About.css';
-import './LastSect.css';
+import './Interrogas.css';
 import NavBar from './NavBar'
 
 

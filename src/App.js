@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Welcome from './Components/Welcome';
-import BtnPage from './Components/BtnDisplay'
+// import Interrogas from './Components/Interrogas'
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   
     <Routes>
         <Route path="/" element={<Welcome/>}></Route>
-        <Route path="/btn" element={<BtnPage/>}></Route>
+        {/* <Route path="/Interrogas" element={<Interrogas/>}></Route> */}
     </Routes>
     <Routes>
         {/* <Route path="/btn" element={<BtnPage/>}></Route> */}
