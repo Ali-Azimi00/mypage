@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Welcome from './Components/Welcome';
-import DemoPage from './Components/DemoPage'
+import CustomPage from './Components/CustomPage'
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   
       <Routes>
           <Route path="/" element={<Welcome/>}></Route>
-          <Route path="/CustomPage" element={<DemoPage/>}></Route>
+          <Route path="/CustomPage" element={<CustomPage/>}></Route>
       </Routes>   
 
       <Routes>

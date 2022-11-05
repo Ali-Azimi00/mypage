@@ -100,7 +100,7 @@
 
     width: 0%;
     max-height: 8vh;    
-    min-height: 3vh;
+    min-height: 2vh;
     margin:3%;
     padding: 0%;
     /* max-height: 20%; */
@@ -115,7 +115,7 @@
 
 .img{
     color: white;
-    font-size: 2vw;
+    font-size: 1.99vw;
   
     width: 150%;
     height: 25vh;
@@ -131,7 +131,7 @@
     opacity: 1;
     cursor: pointer;
     background-image: linear-gradient(180deg, rgb(13, 97, 80) 60%, rgb(0, 0, 0) 100%);
-    font-size: 2.5vw;
+    font-size: 2.25vw;
   
 }
 

@@ -84,7 +84,7 @@ return (
                   smooth={true} 
                   duration={3000}//3500
                   isDynamic={true}
-                  offset={555}//355
+                  offset={666}//355
                   delay={0}
                   // onClick={()=>{
                   //   setKnowMore(true)

@@ -1,7 +1,10 @@
 import React from 'react'
-import '../Components/styles/DemoPage.css';
+import '../Components/styles/CustomPage.css';
+import '../App.css'
+// import ParticlesBg from 'particles-bg'
 // import NavBar from './NavBar'
 import Skills from './Skills'
+import Weather from './Weather/Weather'
 
 
 function DemoPage (){
@@ -11,8 +14,10 @@ function DemoPage (){
    
     return(
         <React.Fragment>
+           
             {/* <NavBar></NavBar> */}
             <div className="bg-dark">
+           
 
                 <div className="box2">
                     <div className='leftSeg'>
@@ -27,8 +32,8 @@ function DemoPage (){
                     </div>
                     <div className='rightSeg'>
 
-                        <div className='samples'>
-                            
+                        <div className='samples'>          
+                             <Weather></Weather>
                         </div>
                         <div className='other'>
                             
@@ -41,7 +46,17 @@ function DemoPage (){
 
 
                 </div>
+                
             </div>           
+            {/* <div className="particles">
+                <ParticlesBg  
+                type="cobweb"
+                num= {48}
+                bg={true}
+                color="#ff0000"
+                position="absolute" 
+            />
+            </div>    */}
         </React.Fragment>
     )
 }
