@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import '../App.css';
-import './About.css';
+import './styles/About.css';
 import ResumePdf from "../Pdf/AliAzimi-Software_Engineer.pdf"
 
 function BtnPage (props){

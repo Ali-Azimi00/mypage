@@ -3,22 +3,24 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Welcome from './Components/Welcome';
-// import Interrogas from './Components/Interrogas'
+import DemoPage from './Components/DemoPage'
 
 
 function App() {
   
   return (
   <React.Fragment>
+    
     <BrowserRouter>
   
-    <Routes>
-        <Route path="/" element={<Welcome/>}></Route>
-        {/* <Route path="/Interrogas" element={<Interrogas/>}></Route> */}
-    </Routes>
-    <Routes>
-        {/* <Route path="/btn" element={<BtnPage/>}></Route> */}
-    </Routes>
+      <Routes>
+          <Route path="/" element={<Welcome/>}></Route>
+          <Route path="/CustomPage" element={<DemoPage/>}></Route>
+      </Routes>   
+
+      <Routes>
+          {/* <Route path="/btn" element={<BtnPage/>}></Route> */}
+      </Routes>
     
     </BrowserRouter>
 

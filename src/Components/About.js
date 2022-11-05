@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
-import './About.css';
+import '../Components/styles/About.css';
 import pic from '../Images/smlAli.PNG'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import BtnDisplay from "./BtnDisplay"

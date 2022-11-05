@@ -1,0 +1,150 @@
+.bg-dark{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background: rgb(28, 28, 28);
+    margin-top: 0%;
+
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.box2{
+    color: white;
+    /* border-color: white;
+    border-style: solid; */   
+    height : 75%;
+    width: 80%;
+
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.leftSeg{
+    color: white;
+    /* border-color: white;
+    border-style: solid;  */
+    height : 100%;
+    width: 50%;
+    /* overflow: hidden; */
+}
+/* .leftSeg:before{
+    background: linear-gradient(180deg,  rgb(28, 28, 28) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 25%;
+    position: absolute;
+    width: 50%;
+    z-index: 3;   
+} */
+/* .leftSeg:after{
+    background: linear-gradient(0deg,  rgb(28, 28, 28) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 25%;
+    position: absolute;
+    width: 50%;
+    z-index: 3; 
+    
+    top: 75%;
+} */
+
+.rightSeg{
+    color: white;
+    border-color: white;
+    border-style: solid;
+
+    height : 100%;
+    width: 50%; 
+}
+
+.skillOpen{
+    height: 0%;  
+    animation: openSkill 2s
+}
+@keyframes openSkill {
+    from { height: 0%}    
+    to {height: 100%}
+}
+
+.slider{
+    color: white;
+    /* border-color: blue;
+    border-style: solid;  */
+    scroll-behavior:auto;
+    overflow: hidden;
+    
+    height : 100%;
+    width: 100%;
+
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+
+.slideTrack{
+    position: relative;
+    font-size: 1.9vw;
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    border-style: solid;
+    border-width: .35vw;
+
+    --magic-rainbow-color-1: rgb(28, 28, 28);
+    --magic-rainbow-color-2: rgb(13, 97, 80);
+    --magic-rainbow-color-3: rgb(28, 28, 28);
+    border-image: linear-gradient(
+      180deg,
+      var(--magic-rainbow-color-1),
+      var(--magic-rainbow-color-2),
+      var(--magic-rainbow-color-1)
+    );
+    border-image-slice: 1;
+
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.skillCard{
+    color: white;
+    /* border-color: rgb(221, 255, 0);
+    border-style: solid;  */
+    border-radius: 2vw;
+}
+.skillCard:hover{
+   color:  rgb(13, 97, 80);
+
+}
+
+.samples{
+    color: white;
+    border-color: white;
+    border-style: solid;
+
+    height : 66%;
+    width: 100%;
+}
+
+.other{
+    color: white;
+    border-color: red;
+    border-style: solid;
+
+    height : 33%;
+    width: 100%;
+}
+
+
+
+

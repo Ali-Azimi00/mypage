@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css';
-import './About.css';
-import './NavBar.css';
+import './styles/About.css';
+import './styles/NavBar.css';
 
 function Footer (){
 
@@ -9,11 +9,10 @@ function Footer (){
     return(
         <React.Fragment>
             <div className="navBar">
-               <div className="block">
-                    <div className="smlBlock">
-                        hi
-                    </div>
-                 
+               <div className="navBlock">
+                    <div className="">
+                        
+                    </div>            
                </div>
             </div>
         </React.Fragment>
